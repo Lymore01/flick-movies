@@ -8,7 +8,7 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Flick",
+  title: "Flick | 1.0.0",
   description: "Discover and vote for the next movie night hit!",
 };
 
