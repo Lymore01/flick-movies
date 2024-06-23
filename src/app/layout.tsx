@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/shared/Footer";
 import NavBar from "@/components/shared/NavBar";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({
           <NavBar />
         </nav>
         {children}
+        <Analytics />
         <footer className="absolute bottom-0 left-0 w-full mt-[40px] h-[50px]">
           <Footer />
         </footer>
