@@ -53,7 +53,7 @@ const Overview = ({ params }: { params: { id: string } }) => {
         </div>
         <div className="py-4 space-y-6 md:w-[60%] md:mx-auto">
           <h1 className="text-2xl capitalize">{movie.title}</h1>
-          <p className="text-base w-full text-white">{movie.overview}</p>
+          <p className="text-base w-full text-white md:text-sm">{movie.overview}</p>
         </div>
         
         <div className="flex w-full h-auto items-end justify-end mt-[40px] backdrop-blur-md md:w-[60%] md:mx-auto">

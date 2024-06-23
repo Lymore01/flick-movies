@@ -28,7 +28,7 @@ const MovieCard = ({ image, alt, onClick, index }: movieCardProps) => {
         duration: 0.5,
       }}
       viewport={{ amount: 0 }}
-      className="border border-[grey]/20 w-full h-[200px] md:h-[300px] rounded-lg cursor-pointer bg-[grey]/20 overflow-hidden"
+      className="border border-[grey]/20 w-full h-[200px] md:h-[210px] rounded-lg cursor-pointer bg-[grey]/20 overflow-hidden"
       onClick={onClick}
     >
       <Image

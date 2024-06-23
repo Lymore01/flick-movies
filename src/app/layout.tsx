@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/shared/Footer";
 import NavBar from "@/components/shared/NavBar";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        {/* Default Open Graph tags */}
+        <meta property="og:image" content="\assets\preview.PNG" />
+        <meta property="og:url" content="https://flick-s.vercel.app" />
+        <meta property="og:type" content="website" />
+      </Head>
       <body className={inter.className} style={{
         position:"relative",
         height:"max-screen"
@@ -33,3 +40,4 @@ export default function RootLayout({
     </html>
   );
 }
+

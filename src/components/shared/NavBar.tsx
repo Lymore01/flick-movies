@@ -18,9 +18,9 @@ const NavBar = () => {
     <section className="text-white w-full backdrop-blur-lg border border-[grey]/20 shadow-lg h-auto md:h-[60px] py-2 px-4 flex justify-between items-center rounded-[99em] relative md:w-[80%] mx-auto z-30">
       <Logo />
       <div className="hidden md:flex md:flex-row gap-[20px] md:items-center">
-        <Link href={"/view-votes"}>Votes</Link>
+        <Link href={"/view-votes"} className="text-sm">Votes</Link>
         <button className="flex items-center w-fit px-4 py-3 bg-[white] md:rounded-[99em] rounded-lg text-black font-semibold cursor-pointer shadow-sm">
-        <Link href={"/create-vote"}>Create Vote</Link>
+        <Link href={"/create-vote"} className="text-sm">Create Vote</Link>
       </button>
       </div>
       <div className="block md:hidden text-white">
