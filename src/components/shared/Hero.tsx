@@ -16,7 +16,7 @@ export default function Hero() {
             <span className="text-xs font-semibold text-[orangered]">Yomune</span>
           </div>
           <p className="text-sm text-[grey]/100 mt-[20px]">
-            Simply search for any movie or series 😉
+            Simply search for any movie you want😉
           </p>
         </div>
       </div>
