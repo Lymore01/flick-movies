@@ -3,7 +3,7 @@ import React from 'react'
 
 const UnderConst = () => {
   return (
-    <div className="text-white w-[90%] flex flex-col gap-[20px] rounded-lg border border-slate-600 p-4">
+    <div className="text-white w-[90%] md:w-[30%] flex flex-col gap-[20px] rounded-lg border border-slate-600 p-4">
         <div className="w-full flex flex-row gap-[5px] h-auto items-center">
           <div className="size-[60px] rounded-full"> 
             <Image src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7aHQGmMNWUwu1ZOZCBkI17UfYJcPC2ShR1Q&s"} alt="profile pic" width={100} height={100} className="size-full object-cover object-center rounded-full"/>

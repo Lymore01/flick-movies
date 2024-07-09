@@ -4,6 +4,8 @@ import "./globals.css";
 import Footer from "@/components/shared/Footer";
 import NavBar from "@/components/shared/NavBar";
 import Head from "next/head";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -7,7 +7,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 const fetchMoviesById = async(id:any) =>{
     
     try {
-        const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=c27d978617c8d6aa99cec43c764351f5&language-en-US`)
+        const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.API_KEY}&language-en-US`)
         const data = await response.json()
         return data;
     } catch (error) {

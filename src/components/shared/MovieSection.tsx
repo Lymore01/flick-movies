@@ -25,6 +25,7 @@ export type MovieProps = {
   title: string;
   id: number;
   releaseDate: string;
+  vote_average:number ;
 };
 
 const MovieSection = () => {
@@ -146,7 +147,7 @@ const MovieSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.5, ease: "easeInOut", type: "spring" }}
-          className="w-full h-auto border border-[grey]/20 rounded-lg p-4 flex flex-col gap-[20px] mt-[10px]"
+          className="w-full h-auto border border-[grey]/20 rounded-lg p-4 flex flex-col gap-[20px] mt-[10px] md:w-[35%]"
         >
           <span className="font-semibold">Filter By</span>
           <div className="space-y-4">
@@ -202,7 +203,9 @@ const MovieSection = () => {
               handleClick(movie.id);
             }}
             index={0}
-            image={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+            image={movie.poster_path
+              ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+              : "https://video-smo.geodata.gov.hk/AVideo/view/img/notfound_portrait.jpg"}
           />
         ))}
       
