@@ -4,12 +4,9 @@ import "./globals.css";
 import Footer from "@/components/shared/Footer";
 import NavBar from "@/components/shared/NavBar";
 import Head from "next/head";
-<<<<<<< HEAD
-import { Analytics } from "@vercel/analytics/react"
-=======
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
->>>>>>> version2
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
