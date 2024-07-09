@@ -8,7 +8,7 @@ const baseUrl = 'https://api.themoviedb.org/3/discover/movie';
 const fetchMovies = async (page: number = 1, limit: number = 10) => {
   try {
     // TMDb API page size is fixed, so limit is handled client-side after fetching the data
-    const response = await fetch(`${baseUrl}?api_key=c27d978617c8d6aa99cec43c764351f5&sort_by=popularity.desc&vote_average.gte=7.5&page=${page}`);
+    const response = await fetch(`${baseUrl}?api_key=${process.env.API_KEY}&sort_by=popularity.desc&vote_average.gte=7.5&page=${page}`);
     if (!response.ok) {
       throw new Error('Failed to fetch movies');
     }
