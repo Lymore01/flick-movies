@@ -71,12 +71,14 @@ const Overview = ({ params }: { params: { id: string } }) => {
   const [movieTrailerWatch, setMovieTrailerWatch] = useState<boolean>(false);
   const [similarMovies, setSimilarMovies] = useState<SimilarMovie[]>([]);
   const [casts, setCasts] = useState<MovieCast[]>([]);
+  
 
   const { data, error } = useSWR(`/api/${params.id}`, fetcher);
 
   const handleTrailerWatch = () => {
     setMovieTrailerWatch(true);
   };
+
 
   useEffect(() => {
     const fetchCast = async () => {
