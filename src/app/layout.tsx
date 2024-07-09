@@ -6,7 +6,7 @@ import NavBar from "@/components/shared/NavBar";
 import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Analytics } from "@vercel/analytics/react"
+// import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,7 +36,7 @@ export default function RootLayout({
           <NavBar />
         </nav>
         {children}
-        <Analytics />
+        {/* <Analytics /> */}
         <footer className="absolute bottom-0 left-0 w-full mt-[40px] h-[50px]">
           <Footer />
         </footer>
